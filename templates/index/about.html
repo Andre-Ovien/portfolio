@@ -1,0 +1,507 @@
+{% extends "base.html" %}
+
+{% block title %} 
+  about 
+{% endblock %} 
+
+
+{% block body %} 
+
+{% load static %}
+
+<!-- Page Title -->
+<div class="page-title" data-aos="fade">
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>About</h1>
+          <p class="mb-0">{{ about.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="current">About</li>
+      </ol>
+    </div>
+  </nav>
+</div>
+<!-- End Page Title -->
+
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4">
+        <img
+          src="/media/{{ about.image }}"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-8 content">
+        <h2>Web Designer &amp; Web Developer.</h2>
+        <p class="fst-italic py-3">{{ about.description2 }}</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Birthday:</strong>
+                <span>{{ about.birthday }}</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Website:</strong>
+                <span></span
+                ><a href="https://andreovien.pythonanywhere.com/">Andre</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
+                <span>+123 456 7890</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                <span>New York, USA</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                <span>{{ about.age }}</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
+                <span>{{ about.degree }}</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                <span>{{ about.email }}</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
+                <span>Available</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="py-3">{{ about.description3 }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /About Section -->
+
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-emoji-smile"></i>
+        <div class="stats-item">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="232"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+      <!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-journal-richtext"></i>
+        <div class="stats-item">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="521"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Projects</p>
+        </div>
+      </div>
+      <!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-headset"></i>
+        <div class="stats-item">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="1463"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Hours Of Support</p>
+        </div>
+      </div>
+      <!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-people"></i>
+        <div class="stats-item">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="15"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Hard Workers</p>
+        </div>
+      </div>
+      <!-- End Stats Item -->
+    </div>
+  </div>
+</section>
+<!-- /Stats Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="skills section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div><span>My</span> <span class="description-title">Skills</span></div>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row skills-content skills-animation">
+      <div class="col-lg-6">
+        <div class="progress">
+          <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"
+            ><span>CSS/BOOTSTRAP</span> <i class="val">90%</i></span
+          >
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"
+            ><span>JavaScript/React</span> <i class="val">75%</i></span
+          >
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <!-- End Skills Item -->
+      </div>
+
+      <div class="col-lg-6">
+        <div class="progress">
+          <span class="skill"><span>Python</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Django</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>MYSQL</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="55"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <!-- End Skills Item -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Skills Section -->
+
+<!-- Interests Section -->
+<section id="interests" class="interests section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Features</h2>
+    <div>
+      <span>I'm</span> <span class="description-title">interested in</span>
+    </div>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-item">
+          <i class="bi bi-hdd-network" style="color: #ff5828"></i>
+          <h3><a href="" class="stretched-link">Backend Development</a></h3>
+        </div>
+      </div>
+
+      <!-- Full-Stack Development -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-item">
+          <i class="bi bi-layers-half" style="color: #0d6efd"></i>
+          <h3><a href="" class="stretched-link">Full-Stack Development</a></h3>
+        </div>
+      </div>
+
+      <!-- API Integration -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="features-item">
+          <i class="bi bi-link-45deg" style="color: #6f42c1"></i>
+          <h3><a href="" class="stretched-link">API Integration</a></h3>
+        </div>
+      </div>
+
+      <!-- Database Design -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="features-item">
+          <i class="bi bi-database" style="color: #6610f2"></i>
+          <h3><a href="" class="stretched-link">Database Design</a></h3>
+        </div>
+      </div>
+
+      <!-- Authentication Systems -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="features-item">
+          <i class="bi bi-shield-lock" style="color: #198754"></i>
+          <h3><a href="" class="stretched-link">Authentication Systems</a></h3>
+        </div>
+      </div>
+
+      <!-- Responsive UI Design -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="features-item">
+          <i class="bi bi-phone" style="color: #20c997"></i>
+          <h3><a href="" class="stretched-link">Responsive UI Design</a></h3>
+        </div>
+      </div>
+
+      <!-- Version Control -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="350">
+        <div class="features-item">
+          <i class="bi bi-git" style="color: #e83e8c"></i>
+          <h3><a href="" class="stretched-link">Version Control (Git)</a></h3>
+        </div>
+      </div>
+
+      <!-- Open Source Contribution -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="features-item">
+          <i class="bi bi-code-slash" style="color: #6c757d"></i>
+          <h3>
+            <a href="" class="stretched-link">Open Source Contribution</a>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Scalable Web Development -->
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="450">
+        <div class="features-item">
+          <i class="bi bi-bar-chart-line" style="color: #ff6b6b"></i>
+          <h3>
+            <a href="" class="stretched-link">Scalable Web Development</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Interests Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <div>
+      <span>Check my</span> <span class="description-title">Testimonials</span>
+    </div>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper init-swiper" data-speed="600" data-delay="5000">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span
+                >We needed someone who could understand the business and build the backend right. Andre delivered more than expected.</span
+              >
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img
+              src="{% static 'img/person/person-m-9.webp' %}"
+              class="testimonial-img"
+              alt=""
+            />
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+          </div>
+        </div>
+        <!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span
+                >As a designer, I’m picky — but Andre made my designs come to life exactly how I envisioned. No compromises.</span
+              >
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img
+              src="{% static 'img/person/person-f-5.webp' %}"
+              class="testimonial-img"
+              alt=""
+            />
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+          </div>
+        </div>
+        <!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span
+                >Andre helped me turn my offline business into a beautiful online store. Everything just works — and looks great!</span
+              >
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img
+              src="{% static 'img/person/person-f-12.webp' %}"
+              class="testimonial-img"
+              alt=""
+            />
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+          </div>
+        </div>
+        <!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span
+                >Super efficient and easy to work with. The dashboard Andre built has made my workflow 10x smoother</span
+              >
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img
+              src="{% static 'img/person/person-m-12.webp' %}"
+              class="testimonial-img"
+              alt=""
+            />
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+        </div>
+        <!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span
+                >I came with just an idea — Andre turned it into a full product. Fast, reliable, and clean execution.</span
+              >
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img
+              src="{% static 'img/person/person-m-13.webp' %}"
+              class="testimonial-img"
+              alt=""
+            />
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+        </div>
+        <!-- End testimonial item -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<!-- /Testimonials Section -->
+
+{% endblock %}

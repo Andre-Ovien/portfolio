@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}
+    resume
+{% endblock %}
+
+{% block body %}
+
+
+ <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Resume</h1>
+              <p class="mb-0">Here’s a snapshot of my professional experience, education, and the skills I’ve picked up along the way. From past roles to personal projects, this section highlights what I bring to the table.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="current">Resume</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Andre Ovien</h4>
+              <p><em>I'm a detail-oriented and solutions-driven developer with 1 year of hands-on experience building clean, functional, and user-focused web experiences. Comfortable across both frontend and backend (especially with Django), I enjoy turning ideas into scalable, working products that make an impact.</em></p>
+              <ul>
+                <li>Portland par 127,Orlando, FL</li>
+                <li>(123) 456-7891</li>
+                <li>andreovien571@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>B.Eng. Electronic and Computer Engineering</h4>
+              <h5><i>2023 – 2027 (In Progress)</i></h5>
+              <p><em>Lagos State University, Nigeria</em></p>
+              <p>Currently pursuing a degree in Electronic and Computer Engineering, with a strong focus on software development, embedded systems, and real-world tech applications.</p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">How I Work</h3>
+            <div class="resume-item">
+              <h4>Efficient, Focused, and Always Iterating</h4>
+              <p><em>Self-Driven Developer</em></p>
+              <p>I approach every project with clarity and speed — breaking down problems, shipping features fast, and refining as I go.</p>
+              <p>I prioritize clean code, efficient solutions, and user-first design. Whether I’m working solo or collaborating, I value momentum, adaptability, and delivering real results over chasing perfection on the first try.</p>
+            </div><!-- End Resume Item -->
+
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Web Developer (Freelance / Personal Projects)</h4>
+              <h5>2025 - Present</h5>
+              <p><em>Experion, New York, NY </em></p>
+              <ul>
+                <li>Designed and developed full-stack web applications with a focus on clean UI and functional backend logic using Django.</li>
+                <li>Notable project: <a href="https://andreovien.pythonanywhere.com/">link</a>, a dynamic website built to demonstrate real-world skills in user interaction, template rendering, and responsive design </li>
+                <li>Managed end-to-end development — from planning and design to deployment and iteration.</li>
+                <li>Continuously learning and applying best practices in modern web development through hands-on project work.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Technical Project Experience</h4>
+              <h5><i>2024 - Present</i></h5>
+              <p><em>Junior Web Developer – Personal Learning Projects</em></p>
+              <ul>
+                <li>Developed multiple project-based websites to strengthen understanding of backend development with Django and frontend integration using Bootstrap</li>
+                <li>Juggled several projects at once — from landing pages to basic CRUD apps — while maintaining clean, readable code and mobile-friendly designs.</li>
+                <li>Regularly explored new tools and libraries, integrating features like contact forms, user authentication, dynamic routing, and media handling.</li>
+                <li>Shared work with peers and mentors for feedback, iterating based on real-time input and improving version control practices with Git.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
+{% endblock %}

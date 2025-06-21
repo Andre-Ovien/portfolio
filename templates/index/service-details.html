@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+{% load static %}
+
+<!-- Page Title -->
+    
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>{{ detail.title }}</h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+    
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <a href="" class="active">Web Development</a>
+              <a href="">Backend Development</a>
+              <a href="">Idea to MVP Builds</a>
+              <a href="">API Integration</a>
+              <a href="">Performance Optimization</a>
+            </div>
+            
+
+            <p>{{ detail.description1 }}</p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="/media/{{ detail.image }}" alt="" class="img-fluid services-img">
+            <h3>{{ detail.header }}</h3>
+            <p>
+              {{ detail.description2 }}
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>{{ detail.point1 }}</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>{{ detail.point2 }}</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>{{ detail.point3 }}</span></li>
+            </ul>
+            <p>
+              {{ detail.text }}
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+    
+
+{% endblock %}
