@@ -24,10 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ypzhw@1ebe(em90chq2uc7(*9(t!zpj4sne2!^eg1-5e(#^&lh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['andyovien.pythonanywhere.com']
-
 
 # Application definition
 
@@ -133,3 +132,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'          
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ovienemmanuel99@gmail.com'  
+EMAIL_HOST_PASSWORD = 'jduu nmkc anuq ymku'  
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

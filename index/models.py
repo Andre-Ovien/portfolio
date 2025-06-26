@@ -96,3 +96,13 @@ class Faq(models.Model):
 
     def __str__(self):
         return self.question
+
+
+class Testimonials(models.Model):
+    name = models.CharField(max_length=50, blank=False)
+    position = models.CharField(max_length=50, blank=False)
+    image = models.ImageField(upload_to="Testimonial")
+    text = models.TextField()
+
+    def __str__(self):
+        return self.name

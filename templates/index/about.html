@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %} 
-  about 
+  Andre-Ovien 
 {% endblock %} 
 
 
@@ -60,12 +60,9 @@
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
-                <span>+123 456 7890</span>
+                <span>09168862689</span>
               </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>City:</strong>
-                <span>New York, USA</span>
-              </li>
+              
             </ul>
           </div>
           <div class="col-lg-6">
@@ -105,7 +102,7 @@
         <div class="stats-item">
           <span
             data-purecounter-start="0"
-            data-purecounter-end="232"
+            data-purecounter-end="3"
             data-purecounter-duration="1"
             class="purecounter"
           ></span>
@@ -119,7 +116,7 @@
         <div class="stats-item">
           <span
             data-purecounter-start="0"
-            data-purecounter-end="521"
+            data-purecounter-end="5"
             data-purecounter-duration="1"
             class="purecounter"
           ></span>
@@ -133,7 +130,7 @@
         <div class="stats-item">
           <span
             data-purecounter-start="0"
-            data-purecounter-end="1463"
+            data-purecounter-end="40"
             data-purecounter-duration="1"
             class="purecounter"
           ></span>
@@ -143,15 +140,15 @@
       <!-- End Stats Item -->
 
       <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-people"></i>
+        <i class="bi bi-terminal"></i>
         <div class="stats-item">
           <span
             data-purecounter-start="0"
-            data-purecounter-end="15"
+            data-purecounter-end="10"
             data-purecounter-duration="1"
             class="purecounter"
           ></span>
-          <p>Hard Workers</p>
+          <p>Technologies used</p>
         </div>
       </div>
       <!-- End Stats Item -->
@@ -398,105 +395,27 @@
         }
       </script>
       <div class="swiper-wrapper">
+        {% for row in data %}
         <div class="swiper-slide">
           <div class="testimonial-item">
             <p>
               <i class="bi bi-quote quote-icon-left"></i>
               <span
-                >We needed someone who could understand the business and build the backend right. Andre delivered more than expected.</span
+                >{{ row.text }}</span
               >
               <i class="bi bi-quote quote-icon-right"></i>
             </p>
             <img
-              src="{% static 'img/person/person-m-9.webp' %}"
+              src="/media/{{ row.image }}"
               class="testimonial-img"
               alt=""
             />
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
+            <h3>{{ row.name }}</h3>
+            <h4>{{ row.position }}</h4>
           </div>
         </div>
         <!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span
-                >As a designer, I’m picky — but Andre made my designs come to life exactly how I envisioned. No compromises.</span
-              >
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img
-              src="{% static 'img/person/person-f-5.webp' %}"
-              class="testimonial-img"
-              alt=""
-            />
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-        </div>
-        <!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span
-                >Andre helped me turn my offline business into a beautiful online store. Everything just works — and looks great!</span
-              >
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img
-              src="{% static 'img/person/person-f-12.webp' %}"
-              class="testimonial-img"
-              alt=""
-            />
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-        </div>
-        <!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span
-                >Super efficient and easy to work with. The dashboard Andre built has made my workflow 10x smoother</span
-              >
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img
-              src="{% static 'img/person/person-m-12.webp' %}"
-              class="testimonial-img"
-              alt=""
-            />
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-        </div>
-        <!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span
-                >I came with just an idea — Andre turned it into a full product. Fast, reliable, and clean execution.</span
-              >
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img
-              src="{% static 'img/person/person-m-13.webp' %}"
-              class="testimonial-img"
-              alt=""
-            />
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-        </div>
-        <!-- End testimonial item -->
+        {% endfor %}
       </div>
       <div class="swiper-pagination"></div>
     </div>
