@@ -73,12 +73,12 @@ def contact(request):
                 subject=f"Contact Form: {subject}",
                 message=f"Name: {name}\nEmail: {email}\n\n{message}",
                 from_email=None,
-                recipient_list=['ovienemmanuel99@gmail.com'],  
+                recipient_list=['andreovien571@gmail.com'],  
             )
 
             
             send_mail(
-                subject=' Got your message — thanks for reaching out!',
+                subject='Got your message — thanks for reaching out!',
                 message=f"""
 Hi {name},
 
