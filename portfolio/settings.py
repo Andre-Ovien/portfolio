@@ -138,5 +138,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'andreovien571@gmail.com'  
-EMAIL_HOST_PASSWORD = 'ogzh ptyg zmjs wfcy'  
+EMAIL_HOST_PASSWORD = 'myti lmnr qajl aknj'  
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

@@ -1,0 +1,54 @@
+# Python
+pycache/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Django/Migrations
+*.sqlite3
+*.log
+db.sqlite3
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.DS_Store
+*.coverage
+coverage_html_report/
+htmlcov/
+
+# Media
+/media/
+
+# Static root
+/staticfiles/
+staticfiles/
+static/
+
+# Secret files
+.env
+*.env
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Git
+*.orig
